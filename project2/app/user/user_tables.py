@@ -7,5 +7,5 @@ class User(db.Model):
     password = db.Column(db.String(20), unique=True, nullable=False)
     email = db.Column(db.String(50), unique=True, nullable=False)   
     mobile = db.Column(db.String(255), unique=False, nullable=False)
-    city = db.Column(db.Date, unique=False, nullable=True)
+    city = db.Column(db.String(255), unique=False, nullable=True)
     designation = db.Column(db.String(255), unique=False, nullable=False)
